@@ -23,47 +23,14 @@ class App extends Component {
   }
 
   render() {
-    return (
-
-      
+    return (      
       <div className="App">
-
-        { /* props are passed to compoents via HTML attributes 
-
-            name will be a property passed into the prop with a value of PetriD
-            
-            { name: PetriD }
-        
-          
-            Below name is a property of prop and PetriD is its value
-
-        <CardList name="PetriD">
-
-           
-            This is where children of props are placed (inside of the component element)
-            
-            <h1>Chris Redfield</h1> will be passed in as children of the prop
-
-            {
-              name: PetriD,
-
-              children: some sort of symbol since we are passing in an <h1>
-
-            }
-
-          
-
-          <h1>Chris Redfield</h1>
-        
-        </CardList>
-      */ }
         
         <CardList name="PetriD">
           { 
             this.state.monsters.map(monster => <h1 key={ monster.id }> { monster.name } </h1>)
           }
-        </CardList>
-          
+        </CardList>          
 
       </div>
     );   
