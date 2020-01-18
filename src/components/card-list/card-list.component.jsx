@@ -3,7 +3,7 @@ import { Card } from '../card/card.component';
 import './card-list.styles.css';
 import { render } from '@testing-library/react';
 
-export const CardList = props => {
+export const CardList = props => {    
 
     return <div className="card-list">
 
